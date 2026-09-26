@@ -233,9 +233,19 @@ no `sorry`, `admit`, custom axiom, `native_decide`, or `unsafe` declaration. Its
 The odd order theorem is an argument of these theorems, not an axiom, so it does not appear in
 this list.
 
-For `lean/`, an earlier snapshot of the development was built and its final theorem reported only
-the same three axioms. The current tree has been refactored since then and is being re-verified;
-the earlier result does not certify it.
+The `lean/` development was rebuilt from scratch on 26 September 2026 at commit `7a2600d`, with
+Lean `v4.33.1`, Mathlib `0df444a` and Formal Conjectures `8323e878` (about 100 minutes on a
+laptop). `lake build Conjecture55FC` completed all 10,749 jobs with no errors, the sources contain
+no `sorry`, `admit`, custom axiom, `native_decide`, or `unsafe` declaration, and all 478
+`#print axioms` reports in the build list only the standard axioms. The final report is:
+
+```text
+'Arxiv.«2604.08040».solvable_of_cyc_lt_solved' depends on axioms: [propext, Classical.choice, Quot.sound]
+```
+
+Its statement uses the definitions `Arxiv.«2604.08040».cyc` and
+`Arxiv.«2604.08040».numPrimeFactors` imported from Formal Conjectures, which are unchanged between
+`8323e878` and the current `main`.
 
 ## Status boundary
 
@@ -252,7 +262,6 @@ What is not claimed:
 
 ```text
 The Lean4Web file does not prove the odd order theorem; it is a hypothesis.
-A fresh complete verification of the current lean/ tree (in progress).
 The other results of arXiv:2604.08040, such as the bounds for the number of all subgroups.
 ```
 
