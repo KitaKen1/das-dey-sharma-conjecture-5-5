@@ -86,7 +86,7 @@ $`a\ge2`$. The same argument shows that every nonabelian simple group has a nonc
 ### 2. Root counts
 
 By Frobenius' theorem, $`n`$ divides $`\#\{x\in G: x^n=1\}`$ for every $`n\mid|G|`$. Writing
-$`c(G)=\sum_{x\in G}1/\varphi(\operatorname{ord}x)`$ and grouping elements by order turns such
+$`c(G)=\sum_{x\in G}1/\varphi(\mathrm{ord}(x))`$ and grouping elements by order turns such
 root counts into lower bounds for cyclic subgroup counts:
 
 - for $`n\mid|G|`$, at least $`\tau(n)`$ cyclic subgroups have order dividing $`n`$;
