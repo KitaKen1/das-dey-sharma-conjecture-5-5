@@ -1,0 +1,19 @@
+name = "psl2_automorphisms"
+version = "0.1.0"
+defaultTargets = ["PSL2AutCard", "OuterIndexCore"]
+
+[[require]]
+name = "cyclic_subgroup_psl2"
+path = "../PSL2"
+
+[[lean_lib]]
+name = "Conjecture55Aut"
+roots = ["Conjecture55Aut"]
+
+[[lean_lib]]
+name = "OuterIndexCore"
+roots = ["OuterIndexCore"]
+
+[[lean_lib]]
+name = "PSL2AutCard"
+roots = ["PSL2AutCard"]

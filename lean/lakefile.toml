@@ -1,0 +1,62 @@
+name = "conjecture55_fc"
+version = "1.0.0"
+defaultTargets = ["Conjecture55FC"]
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures"
+rev = "8323e878b83fcd7f4a448256069352a265460d75"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+[[require]]
+name = "cyclic_subgroup_psl2"
+path = "vendor/PSL2"
+
+[[require]]
+name = "psl2_automorphisms"
+path = "vendor/PSL2Aut"
+
+[[require]]
+name = "small_sylow_groups"
+path = "vendor/SmallGroups"
+
+[[require]]
+name = "conjecture55_socle"
+path = "vendor/Socle"
+
+[[require]]
+name = "order_sixteen_groups"
+path = "vendor/Order16"
+
+[[require]]
+name = "order_thirty_two_groups"
+path = "vendor/Order32"
+
+[[lean_lib]]
+name = "Conjecture55Proof"
+srcDir = "Proof"
+roots = [
+  "A7Case", "A7Count", "Affine", "AlmostSimpleCase", "AlternatingAutIndex", "Brauer",
+  "C16C2Case", "C8C2Case", "CharacteristicChainCount", "CharacteristicCyclicChain",
+  "ComparisonRoots", "ComparisonSplit", "CompletedBounds",
+  "Conjecture55Foundation", "Conjecture55ProofEndpoint", "ConjugateOddFamilies", "CountFibers",
+  "CounterexampleModels", "CyclicExtensions", "CyclicIndexRank", "DihedralGeneratorsStandalone",
+  "DihedralSubgroupsStandalone", "DirectSmallSylow", "DirectSylowAlternatives", "ElementaryRoots",
+  "EmbeddedChainCount", "ExponentBounds", "ExponentReduction", "ExponentShape", "FieldTransport",
+  "Frobenius", "FrobeniusBridge", "GWAdapterCore", "GWStructuralInput", "GeneralDihedralSylow",
+  "Modular16Case", "Modular16Reduction", "Modular32Case", "NormalCyclicChain",
+  "NormalizerOddExtensions", "OddComplementSolvability", "OddRootBypass", "OddSquarefreeArithmetic",
+  "Order16Reduction", "Order32Reduction", "PSL2Case", "PSL2DegreeAtMostTwo", "PartialCyclicCount",
+  "Period", "PrimePowerCase", "PrimePowerRoots", "RankSocle", "RootAssembly", "RootDescent",
+  "RootDivisibilityInput", "RootShape", "RootWeights", "SemidihedralCountingClosure",
+  "SemidihedralSubgroups", "SemidihedralSylow", "SimpleNormalizerIndex", "SquareFieldArithmetic",
+  "SquareFieldAut", "SquareFieldPSL2", "StructuralAssembly", "SylowReduction", "TailCore",
+  "TailFibers", "ThreeCyclicFamilies", "TwoTori", "V4StructuralInput", "V4SylowReduction"
+]
+
+[[lean_lib]]
+name = "Conjecture55FC"

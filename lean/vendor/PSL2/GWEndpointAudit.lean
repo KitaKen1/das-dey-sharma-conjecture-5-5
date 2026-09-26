@@ -1,0 +1,18 @@
+import Mathlib
+import GorensteinWalter.FinalTheorem
+
+#check GorensteinWalter.gorensteinWalter
+#check GorensteinWalter.gorenstein_walter
+#print GorensteinWalter.gorensteinWalterStatement
+#print GorensteinWalter.HasDihedralSylowTwo
+#print GorensteinWalter.IsDGroup
+
+#print axioms GorensteinWalter.no_minimalCounterexample
+#print axioms GorensteinWalter.gorensteinWalter
+#print axioms GorensteinWalter.gorenstein_walter
+#print axioms GorensteinWalter.firstCase_isASeven
+#print axioms GorensteinWalter.firstCase_impossible
+#print axioms GorensteinWalter.secondCase_impossible
+#print axioms GorensteinWalter.no_involution_centralizes_noninvolution_alternatingGroup_four
+#print axioms GorensteinWalter.no_involution_centralizes_noninvolution_alternatingGroup_five
+#print axioms GorensteinWalter.center_eq_bot_perm_fin4

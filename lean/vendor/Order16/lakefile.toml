@@ -1,0 +1,12 @@
+name = "order_sixteen_groups"
+version = "0.1.0"
+defaultTargets = ["Order16Classification"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+[[lean_lib]]
+name = "Order16Classification"
+roots = ["Order16Library.UsefulTheorems.AbelianPa", "Order16Library.UsefulTheorems.AbelianPaUniqueness", "Order16Library.UsefulTheorems.OrderP4_Abel", "Order16Library.UsefulTheorems.CenterInvariant", "Order16Library.UsefulTheorems.P3Group.Structural", "Order16Library.UsefulTheorems.PrimeOrderCyclic", "Order16Library.UsefulTheorems.PrimeOrderClassification", "Order16Library.UsefulTheorems.PrimeSqClassification", "Order16Library.UsefulTheorems.OrderP4_NonAbel", "Order16Library.UsefulTheorems.SemidirectProductClassify", "Order16Library.UsefulTheorems.Counting", "Order16Library.UsefulTheorems.PrimePairNonabelian", "Order16Library.UsefulTheorems.Order16", "Order16Library.UsefulTheorems.SchurZassenhaus", "Order16Library.UsefulTheorems.PrimeSqPrime", "Order16Library.UsefulTheorems.Order2PSq", "Order16Library.UsefulTheorems.P3Group.Defs", "Order16Library.UsefulTheorems.P3Group.AbelianCase", "Order16Library.UsefulTheorems.P3Group.NonAbelianCase", "Order16Library.UsefulTheorems.P3Group.Classification", "Order16Library.UsefulTheorems.P3Group", "Order16Library.UsefulTheorems.Order88", "Order16Library.UsefulTheorems.Order16_Wild", "Order16Candidates", "TransferCharacter", "TransferIndexTwo", "Modular16Model", "Semidihedral16Model"]
